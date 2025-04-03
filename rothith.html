@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohith V - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #006400, #00cc44);
+            color: #ffffff;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+            text-align: left;
+            color: #003366;
+            margin: 20px auto;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+        h1, h2 {
+            color: #003366;
+        }
+        .info {
+            margin-bottom: 15px;
+        }
+        .highlight {
+            color: #003366;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #003366;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin: 10px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .btn:hover {
+            background: #0055aa;
+            transform: scale(1.1);
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .menu .btn {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rohith V - Portfolio</h1>
+        
+        <div class="menu">
+            <button class="btn" onclick="scrollToSection('personal-summary')">Personal Summary</button>
+            <button class="btn" onclick="scrollToSection('job-summary')">Job Summary</button>
+            <button class="btn" onclick="scrollToSection('skills')">Skills</button>
+            <button class="btn" onclick="scrollToSection('internship')">Internship Experience</button>
+            <button class="btn" onclick="scrollToSection('certifications')">Certifications</button>
+            <button class="btn" onclick="scrollToSection('projects')">Personal Projects</button>
+            <button class="btn" onclick="scrollToSection('academic')">Academic Details</button>
+            <button class="btn" onclick="scrollToSection('semester')">Semester Details</button>
+            <button class="btn" onclick="scrollToSection('sports')">Sports</button>
+            <button class="btn" onclick="scrollToSection('contact')">Contact</button>
+        </div>
+        
+        <section id="personal-summary">
+            <h2>Personal Summary</h2>
+            <p>I am a highly motivated and detail-oriented IT enthusiast with a passion for software development, cybersecurity, and cloud technologies. My goal is to continuously expand my technical skills and contribute to innovative solutions in the IT industry.</p>
+        </section>
+        
+        <section id="job-summary">
+            <h2>Job Summary</h2>
+            <p>Seeking opportunities in the IT industry where I can apply my knowledge in web development, network security, and database management. I am keen on exploring roles in cloud computing, system security, and application development.</p>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, Java, JavaScript</li>
+                <li>Web Development: HTML, CSS, React.js</li>
+                <li>Database Management: SQL, MongoDB</li>
+                <li>Cybersecurity: Network Security, Ethical Hacking</li>
+                <li>Cloud Computing: AWS, Azure, Google Cloud</li>
+                <li>System Administration: Linux, Windows Server</li>
+                <li>Data Analysis & AI: Machine Learning, Data Science</li>
+            </ul>
+        </section>
+        
+        <section id="internship">
+            <h2>Internship Experience</h2>
+            <p><strong>Software Developer Intern - XYZ Tech Solutions</strong></p>
+            <p>Worked on full-stack web development projects, integrating backend APIs with front-end frameworks to enhance user experience.</p>
+        </section>
+        
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <p>Completed AWS Certified Cloud Practitioner and Google IT Support Professional certifications, gaining expertise in cloud infrastructure and IT troubleshooting.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>Personal Projects</h2>
+            <p>Developed a portfolio website and an AI-based chatbot for customer support, demonstrating skills in web development and machine learning.</p>
+        </section>
+        
+        <section id="academic">
+            <h2>Academic Details</h2>
+            <p><strong>School:</strong> Dr. Sivanthi Aditanar Matric Hr Sec School, Puzhal, Chennai-600066</p>
+            <p><strong>Medium of Study:</strong> English</p>
+        </section>
+        
+        <section id="semester">
+            <h2>Semester Details</h2>
+            <p><strong>1st Semester:</strong> 1 Arrear (6 Cleared)</p>
+            <p><strong>2nd Semester:</strong> All Cleared (74%)</p>
+        </section>
+        
+        <section id="sports">
+            <h2>Sports</h2>
+            <p>Actively participated in various sports, including football, kabaddi, and volleyball. Engaging in team sports has enhanced my leadership, teamwork, and strategic thinking skills, which are crucial for both professional and personal growth.</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p><strong>Email:</strong> rohitbala132@gmail.com</p>
+            <p><strong>Permanent Address:</strong> No:2/185, Gangai Amman Kovil Street, Pudhu Nagar, Redhills, Chennai-600052</p>
+        </section>
+        
+        <button class="btn" onclick="showAlert()">Hire Me</button>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert("Thank you for your interest! Let's connect and discuss opportunities.");
+        }
+
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
